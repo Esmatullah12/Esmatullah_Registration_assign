@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssform.html</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- googel fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div>
+        <h3>Student Registeraion Form</h3>
+        <hr>
+        <form action="index.php" method="get">
+            <label class="info-label" for="fistname">Firstname:</label><br>
+            <input class="info-input" type="text" name="firstname" placeholder="Firstname" required>
+            <br>
+            <label class="info-label" for="lastname">Middlename:</label><br>
+            <input class="info-input" type="text" name="middlename" placeholder="Middlename" required>
+            <br>
+            <label class="info-label" for="lastname">Lastname:</label><br>
+            <input class="info-input" type="text"  name="lastname" placeholder="Lastname" required>
+            <br>
+            <label class="course-info" for="courses">Course:</label>
+            <select class="course" name="courses" required>
+                <option value="" disabled selected>Courses</option>
+                <option value="volvo">Java</option>
+                <option value="saab">Python</option>
+                <option value="mercedes">C++</option>
+                <option value="audi">Web</option>
+            </select>
+            <br>
+            <input type="radio" id="male" name="fav_language" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="fav_language" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="fav_language" value="Other">
+            <label for="other">Other</label>
+            <br>
+            <label class="info-label" for="phone">Phone:</label><br>
+            <input class="info-input" type="text" value="+91"><br>
+            <input class="info-input" name="telNo" type="tel" size="10" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3} placeholder="phone no.">
+            <br>
+            <label class="info-label" for="address">Current Address:</label><br>
+            <textarea name="message" rows="10" cols="30" placeholder="Current Address"></textarea>
+            <br>
+            <label class="info-label" for="email"><b>Email</b></label><br>
+            <input class="info-input" type="email" id="email" pattern=".+@gmail.com" size="30" required placeholder="Enter Email">
+            <br>
+            <label class="info-label" for="password"><b>Password</b></label><br>
+            <input class="info-input" type="password" id="pass" name="password" minlength="8" required placeholder="Enter Password">
+            <br>
+            <label class="info-label" for="retype-password"><b>Re-type Password</b></label><br>
+            <input class="info-input" type="password" id="pass" name="password" minlength="8" required placeholder="Retype Password">
+            <br>
+            <button class="info-button" >Register</button>
+        </form>
+        
+    </div>
+    
+</body>
+</html>
